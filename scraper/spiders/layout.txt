@@ -1,0 +1,23 @@
+python program that
+- reads from a mongodb collection lists of urls in the form
+"http://site.com/page"
+example: {"urls": ["a","b","c"]}
+- downloads the page
+- extracts html page title (you can use scrappy, beautiful soup or
+simple regex match)
+- write list of titles corresponding to list of urls back to the mongodb
+collection
+example: {"urls": ["a","b","c"], "titles": [1,2,3]}
+
+class Scrape
+
+	def getUrls():
+		return {"urls": ["a","b","c"]}
+		
+	def getResources(urls):
+		
+	def getTitle(page):
+		return hxs.select('/html/head/title/text()').extract()
+		
+	def save():
+		return {"urls": ["a","b","c"], "titles": [1,2,3]}
